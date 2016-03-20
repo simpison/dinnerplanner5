@@ -10,6 +10,7 @@ dinnerPlannerApp.controller('PrintCtrl', function ($scope,Dinner,$location) {
  
 
   $scope.dishPrice = function(dish){
+    console.log(dish)
     return Dinner.getDishPrice(dish);
   }
 
@@ -19,4 +20,4 @@ dinnerPlannerApp.controller('PrintCtrl', function ($scope,Dinner,$location) {
   }
 
 
-}
+});
